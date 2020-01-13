@@ -10,3 +10,6 @@ Flight Show Page
 <% @flight.passengers.each do |flight_passenger| %> 
   <%= flight_passenger.name %>
 <% end %>
+
+  number minor: <%= @flight.number_minor %>
+  number adult: <%= @flight.number_adult %>

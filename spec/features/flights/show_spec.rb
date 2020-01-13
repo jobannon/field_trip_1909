@@ -41,7 +41,13 @@ RSpec.describe "Flight Show Spec" do
         expect(page).to have_content(@southwest_1.passengers[1].name)
     end
 
-    it ""
+    it "I see the number of minors on the flight (minors are any passengers that are under 18)
+        And I see the number of adults on the flight (adults are any passengers that are 18 or older)" do 
+
+      visit "/flights/#{@southwest_1.id}"
+
+      expect(page).to have_content("number minor: 1")
+      expect(page).to have_content("number adult: 1")
   end
 end
 
