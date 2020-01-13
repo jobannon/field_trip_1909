@@ -1,0 +1,12 @@
+Flight Show Page
+<%= @flight.number %>
+<%= @flight.date %>
+<%= @flight.time %>
+<%= @flight.departure_city %>
+<%= @flight.arrival_city %>
+                          
+<%= @flight.airline.name %>
+
+<% @flight.passengers.each do |flight_passenger| %> 
+  <%= flight_passenger.name %>
+<% end %>
