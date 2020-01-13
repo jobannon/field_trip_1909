@@ -1,3 +1,10 @@
+# User Story 4, Count of Minors and Adults on Flight
+
+# As a visitor
+# When I visit a flights show page
+# I see the number of minors on the flight (minors are any passengers that are under 18)
+# And I see the number of adults on the flight (adults are any passengers that are 18 or older)
+
 require 'rails_helper'
 
 RSpec.describe "Flight Show Spec" do
@@ -33,6 +40,8 @@ RSpec.describe "Flight Show Spec" do
         expect(page).to have_content(@southwest_1.passengers[0].name)
         expect(page).to have_content(@southwest_1.passengers[1].name)
     end
+
+    it ""
   end
 end
 

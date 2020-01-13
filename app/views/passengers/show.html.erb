@@ -7,3 +7,13 @@ Passenger Show page
       flight:<%= link_to passenger_flight.id, "/flights/#{passenger_flight.id}" %>
   <% end %>
   </section>
+
+
+  <section id= "passenger_flights_add">
+    <%= form_tag "/flights/#{@passenger.id}/", method: :post do %>
+      <%= label_tag :flight_num%>
+      <%= text_field_tag :flight_num %>
+
+      <%= submit_tag 'Add Flight' %>
+    <% end %>
+  </section>
