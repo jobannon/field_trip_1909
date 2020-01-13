@@ -1,0 +1,9 @@
+Passenger Show page 
+
+<%= @passenger.name %>
+
+  <section id="passenger_flights">
+  <% @passenger.flights.each do |passenger_flight| %>
+      flight:<%= link_to passenger_flight.id, "/flights/#{passenger_flight.id}" %>
+  <% end %>
+  </section>
